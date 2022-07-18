@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipButton: UIButton!
 
     // MARK - Functions
-
     override func viewDidLoad() {
         super.viewDidLoad()
         fechaLabel.text = getDate()
@@ -25,14 +24,22 @@ class ViewController: UIViewController {
 
     @IBAction func generateTip(_ sender: Any) {
         let selectedindex = servicioSegment.selectedSegmentIndex
+        let montoTotal = Double(montoTotalLabel.text!) ?? 0.0
+        var tipValue: Double
 
         switch selectedindex {
         case 0:
-            print("vallet")
+            tipValue = montoTotal * 5 / 100
+            montoTipLabel.text = String(tipValue)
+            print("vallet \(tipValue)")
         case 1:
-            print("limpieza")
+            tipValue = montoTotal * 8 / 100
+            montoTipLabel.text = String(tipValue)
+            print("limpieza \(tipValue)")
         case 2:
-            print("conserje")
+            tipValue = montoTotal * 3 / 100
+            montoTipLabel.text = String(tipValue)
+            print("conserje \(tipValue)")
         default:
             print("error")
         }
@@ -49,7 +56,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func cancelAndRestart(_ sender: Any) {
-
+        let randomInt = Int.random(in: 100..<1000)
+        montoTotalLabel.text = String(randomInt)
     }
 
     func getDate() -> String {

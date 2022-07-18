@@ -45,8 +45,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmV-jP-m0f">
                                 <rect key="frame" x="100" y="224" width="214" height="29"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="$ 100">
+                                    <fragment content="100">
                                         <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="24" name="Optima-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -78,8 +79,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0an-oR-i3D">
-                                <rect key="frame" x="233" y="507" width="44" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0an-oR-i3D">
+                                <rect key="frame" x="233" y="507" width="28" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -187,7 +188,7 @@
                     <connections>
                         <outlet property="fechaLabel" destination="nW2-Qv-yvB" id="SMq-RE-iaE"/>
                         <outlet property="montoTipLabel" destination="0an-oR-i3D" id="tu7-i8-BIX"/>
-                        <outlet property="montoTotalLabel" destination="0an-oR-i3D" id="dSf-F6-her"/>
+                        <outlet property="montoTotalLabel" destination="QmV-jP-m0f" id="loR-Xc-8AX"/>
                         <outlet property="servicioSegment" destination="mUL-bS-Pme" id="0JH-eS-aOj"/>
                         <outlet property="tipButton" destination="eOn-rS-do7" id="uMi-Qy-Cnw"/>
                     </connections>
