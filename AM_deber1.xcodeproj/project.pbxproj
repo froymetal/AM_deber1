@@ -13,6 +13,8 @@
 		3A6B2F7728839AC6007EBDA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B2F7528839AC6007EBDA8 /* Main.storyboard */; };
 		3A6B2F7928839ACB007EBDA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B2F7828839ACB007EBDA8 /* Assets.xcassets */; };
 		3A6B2F7C28839ACB007EBDA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B2F7A28839ACB007EBDA8 /* LaunchScreen.storyboard */; };
+		3A6B2F872884F434007EBDA8 /* OpenSans-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B2F852883A31E007EBDA8 /* OpenSans-VariableFont_wdth,wght.ttf */; };
+		3A6B2F882884F437007EBDA8 /* OpenSans-Italic-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A6B2F842883A311007EBDA8 /* OpenSans-Italic-VariableFont_wdth,wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3A6B2F7828839ACB007EBDA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A6B2F7B28839ACB007EBDA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A6B2F7D28839ACB007EBDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A6B2F842883A311007EBDA8 /* OpenSans-Italic-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
+		3A6B2F852883A31E007EBDA8 /* OpenSans-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		3A6B2F6E28839AC6007EBDA8 /* AM_deber1 */ = {
 			isa = PBXGroup;
 			children = (
+				3A6B2F862883A37B007EBDA8 /* Resources */,
 				3A6B2F6F28839AC6007EBDA8 /* AppDelegate.swift */,
 				3A6B2F7128839AC6007EBDA8 /* SceneDelegate.swift */,
 				3A6B2F7328839AC6007EBDA8 /* ViewController.swift */,
 				3A6B2F7528839AC6007EBDA8 /* Main.storyboard */,
-				3A6B2F7828839ACB007EBDA8 /* Assets.xcassets */,
 				3A6B2F7A28839ACB007EBDA8 /* LaunchScreen.storyboard */,
 				3A6B2F7D28839ACB007EBDA8 /* Info.plist */,
 			);
 			path = AM_deber1;
+			sourceTree = "<group>";
+		};
+		3A6B2F832883A2E6007EBDA8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3A6B2F852883A31E007EBDA8 /* OpenSans-VariableFont_wdth,wght.ttf */,
+				3A6B2F842883A311007EBDA8 /* OpenSans-Italic-VariableFont_wdth,wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3A6B2F862883A37B007EBDA8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A6B2F7828839ACB007EBDA8 /* Assets.xcassets */,
+				3A6B2F832883A2E6007EBDA8 /* Fonts */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +147,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6B2F872884F434007EBDA8 /* OpenSans-VariableFont_wdth,wght.ttf in Resources */,
+				3A6B2F882884F437007EBDA8 /* OpenSans-Italic-VariableFont_wdth,wght.ttf in Resources */,
 				3A6B2F7C28839ACB007EBDA8 /* LaunchScreen.storyboard in Resources */,
 				3A6B2F7928839ACB007EBDA8 /* Assets.xcassets in Resources */,
 				3A6B2F7728839AC6007EBDA8 /* Main.storyboard in Resources */,
