@@ -78,7 +78,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0an-oR-i3D">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0an-oR-i3D">
                                 <rect key="frame" x="233" y="507" width="44" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -101,12 +101,18 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="payTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X0G-tn-XUt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DB-3J-OsG">
                                 <rect key="frame" x="100" y="811" width="214" height="31"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cancelar y Reiniciar"/>
+                                <connections>
+                                    <action selector="cancelAndRestart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jit-H2-Bd1"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mUL-bS-Pme">
                                 <rect key="frame" x="62" y="323" width="291" height="32"/>
@@ -138,11 +144,11 @@
                             <constraint firstItem="QmV-jP-m0f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="AbQ-R0-hTl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8DB-3J-OsG" secondAttribute="bottom" constant="20" id="BDB-Rk-dYA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8DB-3J-OsG" secondAttribute="trailing" constant="100" id="BuI-PP-9qm"/>
+                            <constraint firstItem="0an-oR-i3D" firstAttribute="leading" secondItem="Bll-VK-Guf" secondAttribute="trailing" constant="20" id="BzY-L7-FEN"/>
                             <constraint firstItem="Eag-cw-sGo" firstAttribute="top" secondItem="8EV-aM-MUv" secondAttribute="bottom" constant="8" id="Cou-qT-Lu4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b2t-Bd-jE6" secondAttribute="trailing" constant="40" id="Er3-Od-7LL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RuN-0B-5d1" secondAttribute="trailing" constant="50" id="GBe-qP-29u"/>
                             <constraint firstItem="Bll-VK-Guf" firstAttribute="top" secondItem="nW2-Qv-yvB" secondAttribute="bottom" constant="50" id="ISt-xZ-HyV"/>
-                            <constraint firstItem="0an-oR-i3D" firstAttribute="leading" secondItem="Bll-VK-Guf" secondAttribute="trailing" constant="20" id="Irv-CN-yyQ"/>
                             <constraint firstItem="eOn-rS-do7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="LG1-AF-uhF"/>
                             <constraint firstItem="b2t-Bd-jE6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="M6S-UL-3ai"/>
                             <constraint firstItem="Eag-cw-sGo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="P4K-0Z-61X"/>
@@ -150,7 +156,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bWJ-Rz-fld" secondAttribute="trailing" constant="50" id="Qjf-82-bge"/>
                             <constraint firstItem="8DB-3J-OsG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="R0Z-v2-kOE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ObN-Hc-ekm" secondAttribute="trailing" constant="121" id="Rzs-Uw-c65"/>
-                            <constraint firstItem="0an-oR-i3D" firstAttribute="top" secondItem="ul8-8I-qdL" secondAttribute="bottom" constant="90" id="Sfq-6s-ti8"/>
                             <constraint firstItem="ObN-Hc-ekm" firstAttribute="top" secondItem="8EV-aM-MUv" secondAttribute="bottom" constant="8" id="Tho-3T-CAh"/>
                             <constraint firstItem="Bll-VK-Guf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="UKi-20-UDp"/>
                             <constraint firstItem="bWJ-Rz-fld" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="UnD-IW-zJu"/>
@@ -163,6 +168,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ul8-8I-qdL" secondAttribute="trailing" constant="100" id="fAH-Ns-GIt"/>
                             <constraint firstItem="rBG-QN-xlc" firstAttribute="top" secondItem="QmV-jP-m0f" secondAttribute="bottom" constant="24" id="hLl-ve-F3J"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mUL-bS-Pme" secondAttribute="trailing" constant="61" id="hi3-xS-RQH"/>
+                            <constraint firstItem="8EV-aM-MUv" firstAttribute="top" secondItem="0an-oR-i3D" secondAttribute="bottom" constant="35" id="jJZ-aU-oMf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rBG-QN-xlc" secondAttribute="trailing" constant="100" id="k5W-Tv-Nqj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nW2-Qv-yvB" secondAttribute="trailing" constant="100" id="k7U-lQ-u34"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8EV-aM-MUv" secondAttribute="trailing" constant="40" id="mRs-vn-bTM"/>
@@ -171,9 +177,17 @@
                             <constraint firstItem="RuN-0B-5d1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="pms-4E-ic9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eOn-rS-do7" secondAttribute="trailing" constant="50" id="sLa-nN-PSJ"/>
                             <constraint firstItem="nW2-Qv-yvB" firstAttribute="top" secondItem="ul8-8I-qdL" secondAttribute="bottom" constant="15" id="tES-eS-Kh3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0an-oR-i3D" secondAttribute="trailing" symbolic="YES" id="wuL-qD-stc"/>
                             <constraint firstItem="RuN-0B-5d1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="za2-K0-6bc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fechaLabel" destination="nW2-Qv-yvB" id="SMq-RE-iaE"/>
+                        <outlet property="montoTipLabel" destination="0an-oR-i3D" id="tu7-i8-BIX"/>
+                        <outlet property="montoTotalLabel" destination="0an-oR-i3D" id="dSf-F6-her"/>
+                        <outlet property="servicioSegment" destination="mUL-bS-Pme" id="0JH-eS-aOj"/>
+                        <outlet property="tipButton" destination="eOn-rS-do7" id="uMi-Qy-Cnw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
