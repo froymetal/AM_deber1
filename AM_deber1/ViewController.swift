@@ -25,24 +25,20 @@ class ViewController: UIViewController {
     @IBAction func generateTip(_ sender: Any) {
         let selectedindex = servicioSegment.selectedSegmentIndex
         let montoTotal = Double(montoTotalLabel.text!) ?? 0.0
-        var tipValue: Double
+        var tipValue: Double = 0.0
 
         switch selectedindex {
         case 0:
             tipValue = montoTotal * 5 / 100
-            montoTipLabel.text = String(tipValue)
-            print("vallet \(tipValue)")
         case 1:
             tipValue = montoTotal * 8 / 100
-            montoTipLabel.text = String(tipValue)
-            print("limpieza \(tipValue)")
         case 2:
             tipValue = montoTotal * 3 / 100
-            montoTipLabel.text = String(tipValue)
-            print("conserje \(tipValue)")
         default:
             print("error")
         }
+        montoTipLabel.text = String(tipValue)
+        tipButton.titleLabel?.text = "Pagar Tip : \(String(tipValue))"
     }
 
     @IBAction func payTip(_ sender: Any) {
